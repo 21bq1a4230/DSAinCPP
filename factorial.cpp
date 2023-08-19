@@ -26,7 +26,7 @@ int factorial(int n){
 
 //this is recursive implementation
 //time complexity - O(n)
-// space and aux complexity - O(1)
+// space and aux complexity - O(1) & O(n) where n is the input
 
 int main(){
     cout << factorial(5);
