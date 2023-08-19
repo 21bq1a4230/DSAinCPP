@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-int fact = 1;
 
 
 int factorial(int n){
@@ -19,11 +18,10 @@ int factorial(int n){
 // space and aux space complexity - O(1)
 
 int factorial(int n){
-    if(n<1){
-        return fact;
+    if(n==1){
+        return 1;
     }
-    fact = fact*n;
-    return factorial(n-1);
+    return n*factorial(n-1);
 }
 
 //this is recursive implementation
